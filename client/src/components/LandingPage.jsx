@@ -21,7 +21,9 @@ const LandingPage = () => {
   return(
     <div class="LandingPage">
       <Masthead/>
-      <h1>Hello there! I'm Cheryl, software engineer and {quality}.</h1>
+      <div class='body'>
+        <h1>Hello there! I'm Cheryl, software engineer and {quality}.</h1>
+      </div>
     </div>
   )
 }

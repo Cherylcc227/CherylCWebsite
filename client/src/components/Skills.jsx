@@ -3,10 +3,12 @@ import Masthead from "./Masthead.jsx"
 
 const Skills = () => {
   return (
-    <div>
-      <Masthead/>
-      <h1>SKILLS PAGE</h1>
+  <div>
+    <Masthead/>
+    <div class='body'>
+      <h1>Skills</h1>
     </div>
+  </div>
   )
 }
 

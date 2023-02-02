@@ -14,7 +14,7 @@ const ArtCarousel = () => {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel id='carousel' activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
           className="d-block"

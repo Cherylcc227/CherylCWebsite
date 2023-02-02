@@ -4,8 +4,9 @@ import Masthead from "./Masthead.jsx"
 
 const SoftwareEngineeringProjects = () => {
   return (
-    <div>
+    <div class="Software page">
       <Masthead/>
+      <div class='body'>
       <h1>SOFTWARE ENGINEERING PROJECTS PAGE</h1>
       <li>
         <a href="https://github.com/Team-Cayenne/Primal-Health">Primal Health</a>
@@ -19,6 +20,7 @@ const SoftwareEngineeringProjects = () => {
       <li>
         <a href= "https://github.com/Hack-Reactor-SDC-Team-Pesto/Questions-and-Answers-API">Neo4J Q&A Responses API</a>
       </li>
+      </div>
     </div>
   )
 }
