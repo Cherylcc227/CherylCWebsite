@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+/* .art {
+  display: flex;
+} */
+
+/* .d-block {
+  height: 50%;
+  width:50%;
+} */
+
+.carousel {
+  width:500px;
+  height: auto;
+  background-color: black;
+}
+
+.carousel-item {
+  width:100%;
+  height: 100%;
+}
+
+.carouselContainer {
+  -ms-flex-item-align: center;
+}
