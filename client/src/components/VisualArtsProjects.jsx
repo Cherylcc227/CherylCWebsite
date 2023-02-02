@@ -5,9 +5,12 @@ import ArtCarousel from "./ArtCarousel.jsx"
 const VisualArtsProjects = () => {
 
   return (
-    <div>
+    <div class="art page">
       <Masthead/>
-      <ArtCarousel/>
+      <div class='body'>
+        <h1>Visual Arts</h1>
+        <ArtCarousel/>
+      </div>
     </div>
   )
 

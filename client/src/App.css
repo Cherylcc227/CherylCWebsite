@@ -46,17 +46,35 @@
   width:50%;
 } */
 
+/* .page{
+  display: flex;
+} */
+
+.Masthead {
+  display: flex;
+  justify-content: space-around;
+}
+
+.body {
+  padding-top: 55px;
+}
+
+/* #carousel {
+  height:300px;
+}
+
 .carousel {
   width:500px;
   height: auto;
   background-color: black;
-}
+} */
 
-.carousel-item {
+/* .carousel-item {
   width:100%;
   height: 100%;
-}
+} */
 
 .carouselContainer {
   -ms-flex-item-align: center;
 }
+

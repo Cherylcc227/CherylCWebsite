@@ -8,6 +8,7 @@ import LandingPage from "./components/LandingPage.jsx"
 import Skills from "./components/Skills.jsx"
 import "./App.css";
 import {BrowserRouter, Routes, Route}  from "react-router-dom"
+//import { Route, Switch } from 'react-router-dom';
 
 function App() {
   // const [data, setData] = React.useState(null);
@@ -34,6 +35,14 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>{!data ? "Loading..." : data}</p>
       </header> */}
+      {/* <Switch>
+        <Route path="/" element={<LandingPage/>} />
+        <Route path="AboutMe" element={<AboutMe/>} />
+        <Route path="SoftwareEngineeringProjects" element ={<SoftwareEngineeringProjects/>} />
+        <Route path="VisualArtsProjects" element ={<VisualArtsProjects/>} />
+        <Route path="LiteraryProjects" element ={<LiteraryProjects/>} />
+        <Route path="Skills" element ={<Skills/>} />
+      </Switch> */}
     </div>
   );
 }
