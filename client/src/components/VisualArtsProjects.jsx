@@ -1,13 +1,16 @@
 import React from "react"
 import Masthead from "./Masthead.jsx"
+import ArtCarousel from "./ArtCarousel.jsx"
 
 const VisualArtsProjects = () => {
+
   return (
     <div>
       <Masthead/>
-      <h1> VISUAL ARTS PAGE </h1>
+      <ArtCarousel/>
     </div>
   )
+
 };
 
 export default VisualArtsProjects

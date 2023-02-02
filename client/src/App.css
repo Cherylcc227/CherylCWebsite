@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* .art {
+  display: flex;
+} */
+
+/* .d-block {
+  height: 50%;
+  width:50%;
+} */
+
+.carousel {
+  width:500px;
+  background-color: black;
+}
+
+.carouselContainer {
+  -ms-flex-item-align: center;
+}
