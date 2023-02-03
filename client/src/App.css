@@ -1,5 +1,6 @@
 [data-theme="light"] {
   --background-color: black;
+  --background-color-s: rgb(207 172 193);
   --window-color: #ECEBE4;
   --background-image: url("images/whiteGears.jpg");
   --color: white;
@@ -10,6 +11,7 @@
 
 [data-theme="dark"] {
   --background-color: rgb(110, 225, 232);
+  --background-color-s: rgba(255, 192, 203, 0.7);
   --background-image: url("images/gears.jpg");
   --color: black;
   --component-color: #61988E;
@@ -129,4 +131,21 @@ button {
   background-color: var(--component-color);
   font-weight: bold;
   padding: 10px;
+}
+
+.icon {
+  align-items: center;
+  height: 80%;
+  width: 80%;
+}
+
+.bodys {
+  border-radius: 5px;
+  border:80%;
+  background-color: var(--background-color-s);
+  color: var(--color);
+  margin: 9%;
+  padding: 5%;
+  border-radius: 12px;
+  opacity: 0.95;
 }
