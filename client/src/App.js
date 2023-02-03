@@ -18,6 +18,7 @@ function App() {
   //     .then((res) => res.json())
   //     .then((data) => setData(data.message));
   // }, []);
+  document.documentElement.setAttribute('data-theme', 'light');
 
   return (
     <div className="App">

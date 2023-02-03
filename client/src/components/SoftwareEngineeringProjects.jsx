@@ -4,8 +4,9 @@ import Masthead from "./Masthead.jsx"
 
 const SoftwareEngineeringProjects = () => {
   return (
-    <div class="Software page">
+    <div class="Software component">
       <Masthead/>
+      <div class='bufferDiv'>
       <div class='body'>
       <h1>SOFTWARE ENGINEERING PROJECTS PAGE</h1>
       <li>
@@ -20,6 +21,7 @@ const SoftwareEngineeringProjects = () => {
       <li>
         <a href= "https://github.com/Hack-Reactor-SDC-Team-Pesto/Questions-and-Answers-API">Neo4J Q&A Responses API</a>
       </li>
+      </div>
       </div>
     </div>
   )

@@ -1,5 +1,33 @@
+[data-theme="light"] {
+  --background-color: black;
+  --window-color: #ECEBE4;
+  --background-image: url("images/whiteGears.jpg");
+  --color: white;
+  --component-color: #D9BCB6;
+  --box-shadow-color: grey;
+  --slider-gauge-color:#668f80;
+}
+
+[data-theme="dark"] {
+  color: #ECEBE4;
+  --background-color: white;
+  /* --background-color: url("images/gears.jpg"); */
+  --window-color: #9E788F;
+  /* --window-color: url("images/gears.jpg"); */
+  /*  #ECEBE4*/
+  --background-image: url("images/gears.jpg");
+  --color: black;
+  --component-color: #61988E;
+  --box-shadow-color: black;
+  --slider-gauge-color:#2d4b40;
+}
+html {
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+}
 .App {
   text-align: center;
+  font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
 .App-logo {
@@ -37,44 +65,60 @@
   }
 }
 
-/* .art {
-  display: flex;
-} */
-
-/* .d-block {
-  height: 50%;
-  width:50%;
-} */
-
-/* .page{
-  display: flex;
-} */
-
-.Masthead {
+#Masthead {
   display: flex;
   justify-content: space-around;
 }
 
+.bufferDiv {
+  padding-top: 100px;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 8%;
+  height: 8%
+
+}
+
+.component {
+  background-image: var(--background-image);
+}
+
 .body {
-  padding-top: 55px;
+  border-radius: 5px;
+  border:80%;
+  background-color: white;
+  background-color: var(--background-color);
+  color: var(--color);
+  margin: 9%;
+  padding: 5%;
+  border-radius: 12px;
 }
 
-/* #carousel {
-  height:300px;
+.myIntro {
+  font-size: x-large;
 }
-
-.carousel {
-  width:500px;
-  height: auto;
-  background-color: black;
-} */
-
-/* .carousel-item {
-  width:100%;
-  height: 100%;
-} */
 
 .carouselContainer {
   -ms-flex-item-align: center;
+}
+
+.d-block {
+  border-radius: 10px;
+}
+
+.me {
+  display: flex;
+}
+
+.myPhoto {
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+}
+
+.LandingPage {
+  background-image: url("images/whiteGears.jpg")
 }
 

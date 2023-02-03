@@ -1,16 +1,31 @@
 import React from "react";
-import {Link}  from "react-router-dom";
+import Me2 from "../images/Me2.jpg"
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Masthead = () => {
+  const [theme, setTheme] = React.useState(false);
 
+  const handleThemeChange = () => {
+    if (!theme) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      setTheme(true);
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      setTheme(false);
+    }
+
+  }
     return (
       <>
         <Navbar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
+        {/* <Navbar collapseOnSelect expand='sm' bg='dark' variant='dark' id='Masthead'> */}
+
           <Container>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+            <img className="logo" src={Me2} alt="logo"/>
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav>
+                {/* <img className="logo" src={Me2} alt="logo"/> */}
                 <Nav.Link href='/'>Home</Nav.Link>
                 <Nav.Link href='/AboutMe'>About Me</Nav.Link>
                 <Nav.Link href='/SoftwareEngineeringProjects'>SoftwareEngineeringProjects</Nav.Link>
@@ -18,6 +33,12 @@ const Masthead = () => {
                 <Nav.Link href='/VisualArtsProjects'>VisualArtsProjects</Nav.Link>
               </Nav>
             </Navbar.Collapse>
+            <div className="theme-switch-wrapper">
+        {!theme
+        ? <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i></button>
+        : <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i></button>
+        }
+      </div>
           </Container>
         </Navbar>
       </>
