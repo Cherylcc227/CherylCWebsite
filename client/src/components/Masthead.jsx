@@ -17,10 +17,8 @@ const Masthead = () => {
   }
     return (
       <>
-        <Navbar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
-        {/* <Navbar collapseOnSelect expand='sm' bg='dark' variant='dark' id='Masthead'> */}
-
-          <Container>
+        <Navbar class="navBar" collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
+          <Container class="container">
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <img className="logo" src={Me2} alt="logo"/>
             <Navbar.Collapse id='responsive-navbar-nav'>
@@ -35,8 +33,8 @@ const Masthead = () => {
             </Navbar.Collapse>
             <div className="theme-switch-wrapper">
         {!theme
-        ? <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i></button>
-        : <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i></button>
+        ? <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i>ColorTheme</button>
+        : <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i>ColorTheme</button>
         }
       </div>
           </Container>

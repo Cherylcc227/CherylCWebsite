@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const LandingPage = () => {
-  const qualities = [`👩‍🎨 creative creature	👩‍🎨`, '👩‍🎤 cosplayer 👩‍🎤	', '🎨 artist 🎨', '🦮 dog mama 🦮', '🍔 food enthusiast 🍔', '🤓 avid learner 🤓', '🎭 prop designer 🎭	', `🪷 novice gardener 🪷`, '👹 costume maker 👹	', '✨ dreamer ✨', '🥛 optimist 🥛	']
+  const qualities = [`creative creature	👩‍🎨`, 'cosplayer 👩‍🎤	', 'artist 🎨', 'dog mama 🦮', 'food enthusiast 🍔', 'avid learner 🤓', 'prop designer 🎭	', `novice gardener 🪷`, 'costume maker 👹	', ' dreamer ✨', 'optimist 🥛	']
 
   const [quality, setQuality] = React.useState("");
 
@@ -27,22 +27,25 @@ const LandingPage = () => {
       <Masthead/>
       <div class='bufferDiv'>
       <div class='body'>
-        <h1 class="animate__animated animate__backInLeft">
+        {/* <h1 class="animate__animated animate__backInLeft">
           Hello there!
-        </h1>
+        </h1> */}
           <br/>
         <Container fluid>
           <Row>
-            <Col md="8">
-              <h2>I'm Cheryl, <br/>
+            <Col md="7">
+              <h1 class="animate__animated animate__rollIn">
+                Hello there!
+              </h1>
+              <h1>I'm Cheryl, <br/>
                software engineer and <br/>
                {quality}
                <br/>
                <br/>
-               Thanks for visiting!
-              </h2>
+               Thanks for visiting my site!
+              </h1>
             </Col>
-            <Col md="4">
+            <Col md="5">
               <img
               className="myPhoto"
               src={Me}
