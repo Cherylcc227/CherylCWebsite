@@ -21,6 +21,9 @@ const Masthead = () => {
           <Container class="container">
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <img className="logo" src={Me2} alt="logo"/>
+            {/* <Nav.Link href='/'>
+              <img className="logo" src={Me2} alt="logo"/>
+            </Nav.Link> */}
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav>
                 {/* <img className="logo" src={Me2} alt="logo"/> */}
