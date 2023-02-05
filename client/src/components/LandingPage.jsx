@@ -1,6 +1,4 @@
 import React from "react"
-// import {Link}  from "react-router-dom";
-// import Button from 'react-bootstrap/Button';
 import Masthead from "./Masthead.jsx"
 import Me from "../images/Me.jpg"
 import Container from 'react-bootstrap/Container';
@@ -27,9 +25,6 @@ const LandingPage = () => {
       <Masthead/>
       <div class='bufferDiv'>
       <div class='body'>
-        {/* <h1 class="animate__animated animate__backInLeft">
-          Hello there!
-        </h1> */}
           <br/>
         <Container fluid>
           <Row>
@@ -59,6 +54,5 @@ const LandingPage = () => {
     </div>
   )
 }
-
 
 export default LandingPage

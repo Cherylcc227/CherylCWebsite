@@ -1,5 +1,4 @@
 import React from "react";
-//import {Link}  from "react-router-dom";
 import Masthead from "./Masthead.jsx"
 
 const AboutMe = () => {
@@ -15,8 +14,6 @@ const AboutMe = () => {
         </div>
       </div>
     )
-
-
 }
 
 export default AboutMe

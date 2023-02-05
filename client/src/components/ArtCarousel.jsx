@@ -5,7 +5,6 @@ import MushroomTree from "../images/MushroomTree.jpg"
 import RidingCarpetsPromo from "../images/RidingCarpetsPromo.jpg"
 import Carousel from 'react-bootstrap/Carousel'
 
-
 const ArtCarousel = () => {
   const [index, setIndex] = React.useState(0);
 
@@ -14,12 +13,11 @@ const ArtCarousel = () => {
   };
 
   return (
-    <Carousel id='carousel' activeIndex={index} onSelect={handleSelect}>
+    <Carousel id='carousel' variant="dark" activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
           className="d-block"
           src={SpiritOfCreation}
-          height="100%" width="100%"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -31,7 +29,6 @@ const ArtCarousel = () => {
         <img
           className="d-block"
           src={RidingCarpetsPromo}
-          height="100%" width="100%"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -43,7 +40,6 @@ const ArtCarousel = () => {
         <img
           className="d-block"
           src={MushroomTree}
-          height="100%" width="100%"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -55,7 +51,6 @@ const ArtCarousel = () => {
         <img
           className="d-block"
           src={Area52}
-          height="100%" width="100%"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -63,7 +58,6 @@ const ArtCarousel = () => {
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
-
     </Carousel>
   );
 }

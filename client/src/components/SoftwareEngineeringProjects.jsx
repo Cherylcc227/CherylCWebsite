@@ -1,6 +1,5 @@
 import React from  "react"
 import Masthead from "./Masthead.jsx"
-//import {Link}  from "react-router-dom";
 
 const SoftwareEngineeringProjects = () => {
   return (
