@@ -139,10 +139,19 @@ html {
 
 .navbar-nav {
   font-size: 1.5em !important;
+  gap: 66px;
 }
 
-.container {
-  gap: 33px;
+/* .container {
+  gap: 66px;
+} */
+
+@media (max-width: 400px) {
+  .navbar-nav {
+    /* font-size: 1.5em !important; */
+    gap: 0px;
+    align-items: center;
+  }
 }
 
 button {

@@ -24,9 +24,9 @@ const Masthead = () => {
               <Nav>
                 <Nav.Link href='/'>Home</Nav.Link>
                 <Nav.Link href='/AboutMe'>About Me</Nav.Link>
-                <Nav.Link href='/SoftwareEngineeringProjects'>SoftwareEngineeringProjects</Nav.Link>
+                <Nav.Link href='/SoftwareEngineeringProjects'>SE Projects</Nav.Link>
                 <Nav.Link href='/Skills'>Skills</Nav.Link>
-                <Nav.Link href='/VisualArtsProjects'>VisualArtsProjects</Nav.Link>
+                <Nav.Link href='/VisualArtsProjects'>Visual Arts</Nav.Link>
               </Nav>
             </Navbar.Collapse>
             <div className="theme-switch-wrapper">

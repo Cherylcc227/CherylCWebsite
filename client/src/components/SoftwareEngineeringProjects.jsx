@@ -7,7 +7,7 @@ const SoftwareEngineeringProjects = () => {
       <Masthead/>
       <div class='bufferDiv'>
       <div class='body'>
-      <h1>SOFTWARE ENGINEERING PROJECTS PAGE</h1>
+      <h1>SE PROJECTS</h1>
       <li>
         <a href="https://github.com/Team-Cayenne/Primal-Health">Primal Health</a>
       </li>
