@@ -31,8 +31,8 @@ const Masthead = () => {
             </Navbar.Collapse>
             <div className="theme-switch-wrapper">
         {!theme
-        ? <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i>ColorTheme</button>
-        : <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i>ColorTheme</button>
+        ? <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i>Night</button>
+        : <button className="theme-switch" onClick={() => handleThemeChange()} type="checkbox" id="checkbox"><i className="fa-solid fa-circle-half-stroke"></i>Day</button>
         }
       </div>
           </Container>
