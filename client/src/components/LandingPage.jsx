@@ -4,6 +4,7 @@ import Me from "../images/Me.jpg"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { SocialIcon } from 'react-social-icons';
 
 const LandingPage = () => {
   const qualities = [`creative creature	👩‍🎨`, 'cosplayer 👩‍🎤	', 'artist 🎨', 'dog mama 🦮', 'food enthusiast 🍔', 'avid learner 🤓', 'prop designer 🎭	', `novice gardener 🪷`, 'costume maker 👹	', ' dreamer ✨', 'optimist 🥛	']
@@ -37,7 +38,7 @@ const LandingPage = () => {
                {quality}
                <br/>
                <br/>
-               Thanks for visiting my site!
+               Thanks for visiting my site! If you'd like to connect, feel free to drop me a message on Linkedin <SocialIcon url="https://www.linkedin.com/in/cheryl-casas/" />
               </h1>
             </Col>
             <Col md="5">
