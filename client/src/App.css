@@ -24,7 +24,7 @@ html {
 }
 .App {
   /* text-align: center; */
-  font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'sans-serif','Raleway', Georgia, 'Times New Roman'
 }
 
 .App-logo {
@@ -136,15 +136,13 @@ html {
   gap: 66px;
 }
 
-/* .container {
-  gap: 66px;
-} */
-
 @media (max-width: 414px) {
   .navbar-nav {
-    /* font-size: 1.5em !important; */
     gap: 0px;
     align-items: center;
+  }
+  .bufferDiv {
+    padding-top: 48px;
   }
 }
 
@@ -171,12 +169,5 @@ button {
   margin: 9%;
   padding: 5%;
   border-radius: 12px;
-  /* background-color: transparent; */
-  /* opacity: 0.95; */
 }
 
-/* @media (max-width: 400) {
-  tooltip.inner {
-    placement: right;
-  }
-} */

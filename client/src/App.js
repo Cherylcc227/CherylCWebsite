@@ -8,21 +8,46 @@ import LandingPage from "./components/LandingPage.jsx"
 import Skills from "./components/Skills.jsx"
 import "./App.css";
 import {BrowserRouter, Routes, Route}  from "react-router-dom"
-//import { Route, Switch } from 'react-router-dom';
+import { ThemeContext } from "./context.js";
+
+const ThemeChange = (props) => {
+  const [theme, setTheme] = React.useState(false)
+
+  return (
+    <ThemeContext.Provider value = {{
+      theme, setTheme
+    }}>
+      {props.children}
+    </ThemeContext.Provider>
+  )
+}
 
 function App() {
-  // const [data, setData] = React.useState(null);
+  // const {theme} = React.useContext(ThemeContext);
 
-  // React.useEffect(() => {
-  //   fetch("/api")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data.message));
-  // }, []);
+  // React.useEffect = (() => {
+  //   if (!theme) {
+  //     document.documentElement.setAttribute('data-theme', 'dark');
+  //   } else {
+  //     document.documentElement.setAttribute('data-theme', 'light');
+  //   }
+  // },[theme])
+//   React.useEffect (() => {
+//     if (!theme) {
+//       document.documentElement.setAttribute('data-theme', 'dark');
+//       // setTheme(true);
+//     } else {
+//       document.documentElement.setAttribute('data-theme', 'light');
+//       // setTheme(false);
+//     }
+// },[theme])
+
   document.documentElement.setAttribute('data-theme', 'light');
 
   return (
     <div className="App">
       <BrowserRouter>
+      <ThemeChange>
         <Routes>
           <Route path="/" element={<LandingPage/>} />
           <Route path="AboutMe" element={<AboutMe/>} />
@@ -31,19 +56,8 @@ function App() {
           <Route path="LiteraryProjects" element ={<LiteraryProjects/>} />
           <Route path="Skills" element ={<Skills/>} />
         </Routes>
+      </ThemeChange>
       </BrowserRouter>
-      {/* <header className="App-header"> Hello from the app
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header> */}
-      {/* <Switch>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="AboutMe" element={<AboutMe/>} />
-        <Route path="SoftwareEngineeringProjects" element ={<SoftwareEngineeringProjects/>} />
-        <Route path="VisualArtsProjects" element ={<VisualArtsProjects/>} />
-        <Route path="LiteraryProjects" element ={<LiteraryProjects/>} />
-        <Route path="Skills" element ={<Skills/>} />
-      </Switch> */}
     </div>
   );
 }
