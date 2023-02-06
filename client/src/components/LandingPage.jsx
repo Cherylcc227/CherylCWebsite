@@ -36,10 +36,12 @@ const LandingPage = () => {
               <h1>I'm Cheryl, <br/>
                software engineer and <br/>
                {quality}
-               <br/>
-               <br/>
-               Thanks for visiting my site! If you'd like to connect, feel free to drop me a message on Linkedin <SocialIcon url="https://www.linkedin.com/in/cheryl-casas/" />
               </h1>
+               <br/>
+               <br/>
+              <h2>
+               Thanks for visiting my site! If you'd like to connect, feel free to drop me a message on Linkedin <SocialIcon url="https://www.linkedin.com/in/cheryl-casas/" />
+              </h2>
             </Col>
             <Col md="5">
               <img
