@@ -1,9 +1,21 @@
 import React from "react";
 import Me2 from "../images/Me2.jpg"
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { ThemeContext } from "../context.js";
+
 
 const Masthead = () => {
-  const [theme, setTheme] = React.useState(false);
+  const {theme, setTheme} = React.useContext(ThemeContext);
+
+  //   React.useEffect (() => {
+  //     if (!theme) {
+  //       document.documentElement.setAttribute('data-theme', 'dark');
+  //       // setTheme(true);
+  //     } else {
+  //       document.documentElement.setAttribute('data-theme', 'light');
+  //       // setTheme(false);
+  //     }
+  // },[theme])
 
   const handleThemeChange = () => {
     if (!theme) {
@@ -14,6 +26,8 @@ const Masthead = () => {
       setTheme(false);
     }
   }
+
+
     return (
       <>
         <Navbar class="navBar" collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>

@@ -9,7 +9,7 @@ const SoftwareEngineeringProjects = () => {
       <div class='body'>
         <h1 class="Heading">SE PROJECTS</h1>
           <br/>
-          <h2> Listed below are public repositories available for viewing.  Professional greenfield projects not publicly available include AWS lambdas, AWS API Gateway, .NET, C#, Google Maps API, Javascript, Vue.js, Jquery, Axios, Figma, Lucidchart, Enterprise Architect, Terraform and Jenkins tech stacks.</h2>
+          <h3> Listed below are public repositories available for viewing.  Professional greenfield projects not publicly available utilized AWS lambdas, AWS API Gateway, .NET, C#, Google Maps API, Javascript, Vue.js, Jquery, Axios, Figma, Lucidchart, Enterprise Architect, Terraform and Jenkins.</h3>
           <br/>
           <p>
             <h3>Primal Health</h3>
