@@ -11,7 +11,10 @@ const Skills = () => {
     <Masthead/>
     <div class='bufferDiv'>
     <div class='bodys'>
-      <h1>Skills</h1>
+      <h1 class="Heading">Skills</h1>
+      <br/>
+      <h3 class="Heading">I am a certified AWS Cloud Practitioner.  Below is a growing list of technologies I have experience with.</h3>
+      <br/>
       <Container fluid>
           <Row>
             <Col md="2">

@@ -7,7 +7,8 @@ const AboutMe = () => {
         <Masthead/>
         <div class='bufferDiv'>
         <div class="body">
-        <h1>ABOUT ME</h1>
+        <h1 class="Heading">ABOUT ME</h1>
+        <br/>
         <p class="myIntro">I am a fullstack engineer, curious thinker and boundless dreamer.  Passionate about learning, puzzles, technology and creating, Software Engineering is the perfect profession for me.  Through technology, I channel my passions through applying my skills in designing and creating attractive and fluid UI, building api's, mapping databases and applying data, learning new technologies and building the bridges to connect all these key components together.
         </p>
         </div>
