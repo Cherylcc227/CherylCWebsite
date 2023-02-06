@@ -1,20 +1,20 @@
 [data-theme="light"] {
   --background-color: black;
-  --background-color-s: rgb(207 172 193);
+  --background-color-s: rgba(86 95 13 / 94%);
   --window-color: #ECEBE4;
   --background-image: url("images/whiteGears.jpg");
   --color: white;
-  --component-color: #D9BCB6;
+  --component-color: rgb(54, 51, 65);
   --box-shadow-color: grey;
   --slider-gauge-color:#668f80;
 }
 
 [data-theme="dark"] {
-  --background-color: rgb(110, 225, 232);
+  --background-color: white;
   --background-color-s: rgba(255, 192, 203, 0.7);
   --background-image: url("images/gears.jpg");
   --color: black;
-  --component-color: #61988E;
+  --component-color: white;
   --box-shadow-color: black;
   --slider-gauge-color:#2d4b40;
 }
@@ -30,12 +30,6 @@ html {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -68,7 +62,7 @@ html {
 }
 
 .bufferDiv {
-  padding-top: 100px;
+  padding-top: 25px;
 }
 
 .logo {
@@ -96,12 +90,31 @@ html {
   font-size: x-large;
 }
 
+.carousel-inner img {
+  margin: auto;
+  width:40% !important;
+  height:40% !important;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  font-size: small;
+}
+
 .carouselContainer {
   -ms-flex-item-align: center;
 }
 
 .d-block {
   border-radius: 10px;
+  /* width:50% !important;
+  height:50% !important; */
+}
+
+.artHeading {
+  text-align: center !important;
 }
 
 .me {
@@ -120,23 +133,34 @@ html {
 
 .navbar-nav {
   font-size: 1.5em !important;
+  gap: 66px;
 }
 
-.container {
-  gap: 33px;
+/* .container {
+  gap: 66px;
+} */
+
+@media (max-width: 414px) {
+  .navbar-nav {
+    /* font-size: 1.5em !important; */
+    gap: 0px;
+    align-items: center;
+  }
 }
 
 button {
   border-radius: 5px;
-  background-color: var(--component-color);
+  background-color: var(--background-color);
   font-weight: bold;
   padding: 10px;
+  color: var(--color)
 }
 
-.icon {
+#icon {
   align-items: center;
   height: 80%;
   width: 80%;
+  opacity: 1;
 }
 
 .bodys {
@@ -147,5 +171,12 @@ button {
   margin: 9%;
   padding: 5%;
   border-radius: 12px;
-  opacity: 0.95;
+  /* background-color: transparent; */
+  /* opacity: 0.95; */
 }
+
+/* @media (max-width: 400) {
+  tooltip.inner {
+    placement: right;
+  }
+} */
