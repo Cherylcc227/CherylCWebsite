@@ -1,46 +1,36 @@
 import React from "react";
 import Me2 from "../images/Me2.jpg"
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { ThemeContext } from "../context.js";
+import { ThemeContext } from "../App.js";
+import { Link } from "react-router-dom";
 
 
 const Masthead = () => {
   const {theme, setTheme} = React.useContext(ThemeContext);
 
-  //   React.useEffect (() => {
-  //     if (!theme) {
-  //       document.documentElement.setAttribute('data-theme', 'dark');
-  //       // setTheme(true);
-  //     } else {
-  //       document.documentElement.setAttribute('data-theme', 'light');
-  //       // setTheme(false);
-  //     }
-  // },[theme])
-
   const handleThemeChange = () => {
+    // e.preventDefault();
+    console.log('handle theme change', theme)
     if (!theme) {
-      document.documentElement.setAttribute('data-theme', 'dark');
       setTheme(true);
     } else {
-      document.documentElement.setAttribute('data-theme', 'light');
       setTheme(false);
     }
   }
 
-
     return (
       <>
-        <Navbar class="navBar" collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
-          <Container class="container">
+        <Navbar className="navBar" collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
+          <Container className="container">
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <img className="logo" src={Me2} alt="logo"/>
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav>
-                <Nav.Link href='/'>Home</Nav.Link>
-                <Nav.Link href='/AboutMe'>About Me</Nav.Link>
-                <Nav.Link href='/SoftwareEngineeringProjects'>SE Projects</Nav.Link>
-                <Nav.Link href='/Skills'>Skills</Nav.Link>
-                <Nav.Link href='/VisualArtsProjects'>Visual Arts</Nav.Link>
+                <Nav.Link><Link style={{textDecoration: 'none'}} to='/' className="link">Home</Link></Nav.Link>
+                <Nav.Link><Link style={{textDecoration: 'none'}} to='/AboutMe' className="link">About Me</Link></Nav.Link>
+                <Nav.Link><Link style={{textDecoration: 'none'}} to='/SoftwareEngineeringProjects' className="link">SE Projects</Link></Nav.Link>
+                <Nav.Link><Link style={{textDecoration: 'none'}} to='/Skills' className="link">Skills</Link></Nav.Link>
+                <Nav.Link><Link style={{textDecoration: 'none'}} to='/VisualArtsProjects' className="link">Visual Arts</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
             <div className="theme-switch-wrapper">

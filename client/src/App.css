@@ -1,22 +1,25 @@
 [data-theme="light"] {
   --background-color: black;
   --background-color-s: rgba(86 95 13 / 94%);
-  --window-color: #ECEBE4;
+  --button-color: #ECEBE4;
   --background-image: url("images/whiteGears.jpg");
   --color: white;
   --component-color: rgb(54, 51, 65);
   --box-shadow-color: grey;
   --slider-gauge-color:#668f80;
+  --link-color: rgba(23, 12, 12, .9);
 }
 
 [data-theme="dark"] {
   --background-color: white;
   --background-color-s: rgba(255, 192, 203, 0.7);
+  --button-color: black;
   --background-image: url("images/gears.jpg");
   --color: black;
   --component-color: white;
   --box-shadow-color: black;
   --slider-gauge-color:#2d4b40;
+  --link-color: rgba(244, 242, 242, 0.839);
 }
 html {
   background-color: var(--background-color);
@@ -61,6 +64,13 @@ html {
   justify-content: space-around;
 }
 
+.link {
+  color: var(--button-color);
+}
+.link:hover {
+   color: red;
+}
+
 .bufferDiv {
   padding-top: 25px;
 }
@@ -90,6 +100,10 @@ html {
   font-size: x-large;
 }
 
+.caption {
+  color: var(--button-color);
+}
+
 .carousel-inner img {
   margin: auto;
   width:40% !important;
@@ -109,8 +123,6 @@ html {
 
 .d-block {
   border-radius: 10px;
-  /* width:50% !important;
-  height:50% !important; */
 }
 
 .Heading {
@@ -131,9 +143,16 @@ html {
   background-image: url("images/whiteGears.jpg")
 }
 
+.navBar {
+  /* background-color: rgba(23, 12, 12, .9) !important ; */
+  background-color: var(--link-color)!important;
+  /* color: black!important; */
+}
+
 .navbar-nav {
   font-size: 1.5em !important;
   gap: 66px;
+  /* color: black!important; */
 }
 
 @media (max-width: 414px) {
@@ -144,14 +163,17 @@ html {
   .bufferDiv {
     padding-top: 48px;
   }
+  .caption {
+    font-size: large;
+  }
 }
 
 button {
   border-radius: 5px;
-  background-color: var(--background-color);
+  background-color: var(--button-color);
   font-weight: bold;
   padding: 10px;
-  color: var(--color)
+  color: var(--component-color)
 }
 
 #icon {

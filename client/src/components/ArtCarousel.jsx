@@ -21,7 +21,7 @@ const ArtCarousel = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Spirit of Creation</h3>
+          <h3 className="caption">Spirit of Creation</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -32,7 +32,7 @@ const ArtCarousel = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Commisioned Promo Art for Band: Riding Carpets</h3>
+          <h3 className="caption">Commisioned Promo Art for Band: Riding Carpets</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -43,7 +43,7 @@ const ArtCarousel = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Hand crafted resin mushroom ornaments & foam clay display tree</h3>
+          <h3 className="caption">Hand crafted resin mushroom ornaments & foam clay display tree</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -54,7 +54,7 @@ const ArtCarousel = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Personal Project</h3>
+          <h3 className="caption">Personal Project</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
