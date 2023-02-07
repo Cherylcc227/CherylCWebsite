@@ -65,7 +65,6 @@ html {
 }
 
 .link {
-  /* color: #FFF; */
   color: var(--button-color);
 }
 .link:hover {
@@ -99,6 +98,10 @@ html {
 
 .myIntro {
   font-size: x-large;
+}
+
+.caption {
+  color: var(--button-color);
 }
 
 .carousel-inner img {
@@ -159,6 +162,9 @@ html {
   }
   .bufferDiv {
     padding-top: 48px;
+  }
+  .caption {
+    font-size: large;
   }
 }
 
