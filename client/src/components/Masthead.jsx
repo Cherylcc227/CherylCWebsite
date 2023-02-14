@@ -9,8 +9,6 @@ const Masthead = () => {
   const {theme, setTheme} = React.useContext(ThemeContext);
 
   const handleThemeChange = () => {
-    // e.preventDefault();
-    console.log('handle theme change', theme)
     if (!theme) {
       setTheme(true);
     } else {
