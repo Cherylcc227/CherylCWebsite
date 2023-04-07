@@ -1,5 +1,5 @@
 import React from "react"
-import SpiritOfCreation from "../images/SpiritOfCreativity.jpg"
+import CherylOne from "../images/CherylOne.jpg"
 import Area52 from "../images/Area52.jpg"
 import MushroomTree from "../images/MushroomTree.jpg"
 import RidingCarpetsPromo from "../images/RidingCarpetsPromo.jpg"
