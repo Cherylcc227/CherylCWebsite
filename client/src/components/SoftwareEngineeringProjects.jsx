@@ -17,7 +17,9 @@ const SoftwareEngineeringProjects = () => {
               Personality website featuring local Denver visual/liquid artist, Pigment Pond
               <br/>
               Checkout the github page & website for Pigment Pond here: &nbsp;
+              <br/>
               <a href="https://github.com/Cherylcc227/PigmentPond">Pigment Pond</a>
+              <br/>
               <a href="https://pigment-pond-a1751004d7fd.herokuapp.com/">Welcome To Pigment Pond</a>
             </span>
           </p>
