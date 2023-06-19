@@ -12,6 +12,16 @@ const SoftwareEngineeringProjects = () => {
           <h3> Listed below are public repositories available for viewing.  Professional greenfield projects not publicly available utilized AWS lambdas, AWS API Gateway, .NET, C#, Google Maps API, Javascript, Vue.js, Jquery, Axios, Figma, Lucidchart, Enterprise Architect, Terraform and Jenkins.</h3>
           <br/>
           <p>
+            <h3>Pigment Pond</h3>
+            <span>
+              Personality website featuring local Denver visual/liquid artist, Pigment Pond
+              <br/>
+              Checkout the github page & website for Pigment Pond here: &nbsp;
+              <a href="https://github.com/Cherylcc227/PigmentPond">Pigment Pond</a>
+              <a href="https://pigment-pond-a1751004d7fd.herokuapp.com/">Welcome To Pigment Pond</a>
+            </span>
+          </p>
+          <p>
             <h3>Primal Health</h3>
             <span>
               Primal Health is a demo e-commerce site focusing on biodynamically produced meal plan delivery subsciptions with an additional Nutrition and Health education resource.
